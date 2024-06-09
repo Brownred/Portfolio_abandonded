@@ -1,0 +1,152 @@
+@tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    :root {
+      --background: 208 100% 97%;   /* Modified */
+      --foreground: 0 0% 0%;    /* Modified */
+
+      --ghostWhite: 240 100% 99%;
+
+      --card: 0 0% 100%;
+      --card-foreground: 222.2 84% 4.9%;
+
+      --popover: 0 0% 100%;
+      --popover-foreground: 222.2 84% 4.9%;
+
+      --primary: 218 89% 56%;   /* Modified */
+      --primary-foreground: 210 40% 98%; /* Look for one */
+
+      --secondary: 183 100% 41%;   /* Modified */
+      --secondary-foreground: 222.2 47.4% 11.2%;  /* Look for one */
+
+      --muted: 210 40% 96.1%;
+      --muted-foreground: 215.4 16.3% 46.9%;
+
+      --accent: 29 95% 49%;  /* Modified */
+      --accent-foreground: 222.2 47.4% 11.2%; /* Look for one */
+
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 214.3 31.8% 91.4%;
+      --input: 214.3 31.8% 91.4%;
+      --ring: 225 73% 57%;  /* Modified */
+
+      --radius: 0.5rem;
+    }
+
+    .dark {
+      --background: 222.2 84% 4.9%;
+      --foreground: 210 40% 98%;
+
+      --card: 222.2 84% 4.9%;
+      --card-foreground: 210 40% 98%;
+
+      --popover: 222.2 84% 4.9%;
+      --popover-foreground: 210 40% 98%;
+
+      --primary: 210 40% 98%;
+      --primary-foreground: 222.2 47.4% 11.2%;
+
+      --secondary: 217.2 32.6% 17.5%;
+      --secondary-foreground: 210 40% 98%;
+
+      --muted: 217.2 32.6% 17.5%;
+      --muted-foreground: 215 20.2% 65.1%;
+
+      --accent: 217.2 32.6% 17.5%;
+      --accent-foreground: 210 40% 98%;
+
+      --destructive: 0 62.8% 30.6%;
+      --destructive-foreground: 210 40% 98%;
+
+      --border: 217.2 32.6% 17.5%;
+      --input: 217.2 32.6% 17.5%;
+      --ring: 212.7 26.8% 83.9%;
+    }
+  }
+
+  @layer base {
+    * {
+      @apply border-border;
+    }
+    body {
+      @apply text-foreground;
+    }
+    p {
+      @apply font-lato
+    }
+    h1, h2, h3, h4, h5, h5 {
+      @apply font-montserrat
+    }
+  }
+
+
+@layer utilities {
+
+
+  /* FONTS */
+  .lato-light {
+    @apply font-light not-italic
+  }
+
+
+  .lato-regular {
+    @apply font-regular not-italic
+  }
+
+
+  .lato-bold {
+    @apply font-bold not-italic
+  }
+
+
+  .lato-black {
+    @apply font-black not-italic
+  }
+
+  .latoh1 {
+    @apply font-lato font-bold not-italic text-4xl
+  }
+  
+  .latoh3 {
+    @apply font-montserrat font-semibold not-italic text-base
+  }
+
+}
+
+/* // <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.montserrat-<uniquifier> {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto; **** in tailwind
+  font-weight: <weight>;
+  font-style: normal;
+} */
+
+/* .lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+} */
